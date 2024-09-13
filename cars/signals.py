@@ -31,4 +31,3 @@ def Car_post_save(sender,instance, **kwargs):
 @receiver(post_delete, sender=Car)
 def Car_post_delete(sender,instance, **kwargs):
     Car_inventory_update()
-    
